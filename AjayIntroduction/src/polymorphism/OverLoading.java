@@ -1,25 +1,29 @@
 package polymorphism;
 
 class StaticPolymorphism{
-	void sum() {
-		System.out.println("this is sum method");
+	void display() {
+		System.out.println("display method ");
 	}
-	void sum(int a,int b) {
-		System.out.println("the sum of two numbers is "+(a+b));
+	int display(int a,int b) {
+		System.out.println("display method with int return type");
+		return a+b;
 	}
-	int sum(int a) {
-		return a;
+	String display(String str,String str1) {
+		System.out.println("display method woth string return type");
+		return str1+str;
 	}
+	
 	
 }
 public class OverLoading {
 
 	public static void main(String[] args) {
 		StaticPolymorphism sp=new StaticPolymorphism();
-		sp.sum();
-		sp.sum(10,20);
-		int res=sp.sum(55);
-		System.out.println(res);
+		sp.display();
+		int res=sp.display(10,20);
+		System.out.println("result is "+res);
+		System.out.println(sp.display("sowmya", "reddy"));
+		
 	
 		
 	}

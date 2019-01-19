@@ -1,4 +1,4 @@
-package Questions;
+package questions;
 
 public class Question1 implements Interface1 {
 

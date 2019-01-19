@@ -30,10 +30,12 @@ public class UserDefineException {
 		int z;
 		UserException ue=new UserException();
 		try {
+			System.out.println("am in try block");
 			z=ue.computeDivison(a,b);
 		}
 	catch(UserDefinedArithmeticException ude){
-			ude.getMessage();
+		System.out.println("am in catch block");
+			System.out.println("catch block mesage"+ude.getMessage());
 		}
 	}
 

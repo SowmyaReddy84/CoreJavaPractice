@@ -5,7 +5,7 @@ class Test{
 	public void method1() {
 		System.out.println("method1 in parent class");
 	}
-	public  void method3() {
+	void method3() {
 		System.out.println("method3 in parent class which is private method");
 	}
 	protected void method2() {

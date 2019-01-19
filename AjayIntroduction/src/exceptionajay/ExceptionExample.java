@@ -20,17 +20,19 @@ public class ExceptionExample {
 		
 		try {
 			c=a/b;
+			System.out.println("exceptionis handling");
 			throw new ArithmeticException();
-			
 		}
 		catch(ArithmeticException ae) {
 			System.out.println("arithmetic exception");
 			System.out.println(ae.getMessage());
 		}
+		
 		catch(Exception e) {
 			//e.printStackTrace();
 			System.out.println(e.getMessage());
 		}
+		
 		finally {
 			System.out.println("try block execution is done");
 		}
